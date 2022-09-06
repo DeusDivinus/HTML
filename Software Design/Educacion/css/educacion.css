@@ -75,7 +75,6 @@ body {
 
 .content-wrapper .navigation-wrapper {
     margin: 5px;
-    background: #fffdf6;
     border-radius: 10px;
 }
 
@@ -92,6 +91,7 @@ body {
 }
 
 .section-wrapper>div {
+    transition: 0.2s;
     background: #fffdf6;
     flex: 1;
     margin: 5px;
@@ -117,4 +117,28 @@ body {
     padding: 5px;
     display: flex;
     justify-content: center;
+}
+
+.navigation-wrapper > nav{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    background: #fffdf6;
+    border-radius: 10px;
+}
+
+.navigation-wrapper > nav > a{
+    font-weight: 400;
+    text-shadow: 1px 1px rgb(184, 184, 184);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 0.2s;
+}
+
+.navigation-wrapper > nav > a:hover{
+    letter-spacing: 0.3px;
+    padding: 2px;
+
 }
