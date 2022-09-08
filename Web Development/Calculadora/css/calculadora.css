@@ -1,0 +1,129 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.gray-out{
+    color: #7c7c7c;
+}
+
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
+}
+
+.pageholder {
+    display: flex;
+    padding: 0%;
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #352f44;
+    border: 5px solid #ffffff;
+    border-radius: 24px;
+}
+
+.mainholder {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.85;
+    max-width: 85%;
+}
+
+#pantalla {
+    flex-grow: 0.1;
+    width: calc(100% - (20px + 1.67*2));
+    margin: 10px;
+    letter-spacing: 1.3px;
+    font-size: 30px;
+    height: 11%;
+    border-radius: 7px;
+    border: 2px solid #413434;
+    color: rgb(255, 255, 255);
+    background-color: #cdcdffa9;
+    padding-inline: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bottom-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0.9;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+
+.calculator-number {
+    display: flex;
+    justify-content: center;
+    margin: .1em;
+    padding: .3em;
+    flex: 1 0 25%;
+    overflow: hidden;
+    border: 2px solid #494949;
+    border-radius: 4px;
+    background: #423c3c;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    max-width: 10vw;
+}
+
+.sideholder {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.15;
+    width: 15%;
+    align-items: center;
+}
+
+.side-number {
+    display: flex;
+    justify-content: center;
+    margin: .1em;
+    padding: .3em;
+    flex: 1;
+    overflow: hidden;
+    border: 2px solid #494949;
+    border-radius: 4px;
+    color: white;
+    max-width: 10vw;
+    font-size: 23px;
+    background: #7b80ad;
+}
+
+.bottom-side-row {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0.9;
+    margin: 10px;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+.top-rowbutton {
+    flex-grow: 0.4;
+    margin: 10px;
+    width: 70%;
+    height: 10%;
+    overflow: hidden;
+    border: 2px solid #494949;
+    border-radius: 4px;
+    color: white;
+    max-width: 10vw;
+    font-size: 23px;
+    background: #b47a60;
+}
+
+.equal-button{
+    background: #b47a60;
+}
