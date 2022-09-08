@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/formulario.css" />
+    <script src="../js/formulario.js"></script>
+    <script src="../js/login.js"></script>
+
+</head>
+
+<body>
+    <div class="pageholder">
+        <div class="formholder">
+            <form class="loginform" id="loginform" name="loginform" action="welcome.html" method="get">
+                <div class="fieldsholder">
+                    <div class="fields">
+                        <h2>Log In</h2>
+                        <input name="username" type="text" placeholder="Username" id="user" class="login-box" autocomplete="off"/>
+                        <input type="password" placeholder="Password" id="pass" class="login-box" />
+                    </div>
+                </div>
+
+                <div class="formbuttonsholder">
+                    <div class="fields">
+                        <input name="Accept" type="button" value="Send" class="form-button" onclick="return validate()"/>
+                        <input name="Reset" type="reset" value="Clear" class="form-button"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
