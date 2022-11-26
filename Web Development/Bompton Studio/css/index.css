@@ -136,7 +136,7 @@ header{
     font-family: var(--couregette-font), cursive;
     font-size: 1em;
     color: var(--header-txt-color);
-    min-width: 150px;
+    min-width: 5vw;
 }
 
 .header-icons{
@@ -146,15 +146,17 @@ header{
 }
 
 .start, .end{
-    width: 25vw;
+    width: 25%;
     gap: 10px;
-    padding-inline: 10px;
 }
 
 .middle{
-    width: 50vw;
+    width: 50%;
 }
 
+.header-logo{
+    padding-inline: 10px;
+}
 .header-navbutton{
     height: 30px;
     width: var(--header-nav-w);
@@ -277,10 +279,12 @@ header{
 
     header{
         height: var(--header-height);
+        justify-content: space-between;
     }
 
     .text-header{
         font-size: 0.9em;
+        min-width: 5vw;
     }
 
     .header-icons{
@@ -289,9 +293,10 @@ header{
     }
 
     .start, .end{
-        width: 50vw;
+        width: 50%;
         gap: 10px;
         padding-inline: 10px;
+        justify-content: flex-end;
     }
 
     .start{
@@ -299,8 +304,7 @@ header{
     }
     .middle{
         justify-content: flex-start;
-        padding-inline-start: 10px;
-        width: 50vw;
+        width: 10%;
     }
 
     /* Page Content */
