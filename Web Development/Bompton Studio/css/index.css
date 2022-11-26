@@ -215,9 +215,10 @@ header{
     background-size: contain;
     background-position: bottom;
     background-blend-mode: darken;
-    background-color: #080808d5;
+    background-color: #111111ec;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: var(--front-img-boxshadow);
     padding-top: 10px;
     padding-bottom: 10px;
