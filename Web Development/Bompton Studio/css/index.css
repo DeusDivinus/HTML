@@ -7,7 +7,7 @@
     --pinyon-font: 'Pinyon Script';
     --marck-font: 'Marck Script';
     --couregette-font: 'Courgette';
-    
+
     --title-one-size: 3.5rem;
     --text-one-size: 1.3rem;
     /* Header */
@@ -182,13 +182,13 @@ header{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 25% center;
-    background-size: 75vh 100%; 
+    background-size: 75vh 100%;
 }
 
 .fi-content{
     align-items: center;
     width: 65vw;
-} 
+}
 .fi-start{
     height: 20%;
 }
@@ -249,6 +249,15 @@ header{
     object-fit: cover;
 }
 
+/* .g-imageholder::after{
+    content: "eeaeae";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+} */
+
 .galery-title{
     padding-inline: 10px;
 }
@@ -264,26 +273,26 @@ header{
         --front-img-boxshadow: 0px 0px 5px 5px var(--header-bg) inset;
     }
     /* Header */
-    
+
     header{
         height: var(--header-height);
     }
-    
+
     .text-header{
         font-size: 0.9em;
     }
-    
+
     .header-icons{
         width: var(--header-icon-w);
         height: var(--header-icon-h);
     }
-    
+
     .start, .end{
         width: 50vw;
         gap: 10px;
         padding-inline: 10px;
     }
-    
+
     .start{
         display: none;
     }
@@ -292,24 +301,24 @@ header{
         padding-inline-start: 10px;
         width: 50vw;
     }
-    
+
     /* Page Content */
-    
+
     .content{
         height: 3000px;
         background: black;
     }
-    
-    
+
+
     .front-image{
         overflow: hidden;
-        background-size: 75vh 100%; 
+        background-size: 100vh 100%;
     }
-    
+
     .fi-content{
         /* background-color: #0e0e0eb4; */
         width: 100vw;
-    } 
+    }
     .fi-start{
         height: 25%;
     }
@@ -322,15 +331,15 @@ header{
 
 
     }
-    
-    
+
+
     .titleI{
         color: #b39f7b;
         font-family: var(--pinyon-font);
         font-size: var(--title-one-size);
         text-align: center;
     }
-    
+
     .textI{
         color: #b39f7b;
         text-align: center;
