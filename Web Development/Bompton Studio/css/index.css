@@ -118,6 +118,7 @@ body{
 /* Header */
 
 header{
+    width: 100%;
     padding-top: 10px;
     background: var(--header-bg);
     position: sticky;
