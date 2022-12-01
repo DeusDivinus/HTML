@@ -10,6 +10,8 @@
 
     --title-one-size: 3.5rem;
     --text-one-size: 1.3rem;
+    /* Overlay */
+    --overlay-bg: #080808db;
     /* Header */
     --header-height: 90px ;
     --header-boxshadow: 0px 0px 5px 10px var(--header-bg);
@@ -25,6 +27,8 @@
     --front-img-boxshadow: 0px 0px 5px 5px black inset;
     --front-img-bgimg: url("../img/tattoos/forearm_darkbg.jpg");
 }
+
+
 
 /* Text Types */
 
@@ -117,6 +121,42 @@ body{
     padding: 0%;
 }
 
+/* Overlay */
+
+.overlay{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: var(--overlay-bg);
+    z-index: 10000;
+}
+
+.overlay-content{
+    width: 90%;
+    height: 100%;
+}
+
+.overlay-settings{
+
+    width: 10%;
+}
+
+.overlay-close{
+    width: 50px;
+    padding: 0px;
+    margin: 10px;
+    background: none;
+    border: none;
+}
+.oc-icon{
+    filter: invert();
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    mix-blend-mode: color-dodge;
+}
+
 /* Header */
 
 header{
@@ -128,7 +168,7 @@ header{
     height: var(--header-height);
     transition: 1s;
     box-shadow: var(--header-boxshadow);
-    z-index: 100000;
+    z-index: 1000;
 }
 
 .text-header{
@@ -145,6 +185,7 @@ header{
     filter: invert();
     width: var(--header-icon-w);
     height: var(--header-icon-h);
+    margin-right: 20px;
 }
 
 .start, .end{
@@ -226,15 +267,10 @@ html {
 }
 
 .fi-footer span{
-    width: 150px;
+    max-width: 150px;
 }
 
-.fi-footer-i{
-    gap: 15px;
-    width: 250px;
-    height: 100%;
-}
-.fi-footer-e{
+.fi-footer-ch{
     gap: 15px;
     width: 250px;
     height: 100%;
@@ -307,6 +343,22 @@ html {
         /* Front Image */
         --front-img-boxshadow: 0px 0px 5px 5px var(--header-bg) inset;
     }
+
+    .titleI{
+        color: #b39f7b;
+        font-family: var(--pinyon-font);
+        font-size: var(--title-one-size);
+        text-align: center;
+    }
+
+    .textI{
+        color: #b39f7b;
+        text-align: center;
+        font-size: var(--text-one-size);
+    }
+
+    /* Overlay */
+
     /* Header */
 
     header{
@@ -345,6 +397,8 @@ html {
         background: black;
     }
 
+    /* Acerca De */
+
 
     .front-image{
         overflow: hidden;
@@ -372,17 +426,10 @@ html {
         width: 25%;
     }
 
-
-    .titleI{
-        color: #b39f7b;
-        font-family: var(--pinyon-font);
-        font-size: var(--title-one-size);
-        text-align: center;
+    .fi-footer-ch{
+        width: 165px;
+        margin: 10px;
+        gap: 10px;
     }
 
-    .textI{
-        color: #b39f7b;
-        text-align: center;
-        font-size: var(--text-one-size);
-    }
 }
