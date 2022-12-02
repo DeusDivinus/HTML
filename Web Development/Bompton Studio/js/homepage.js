@@ -52,7 +52,7 @@ function addImages()
     galleryIMG.forEach(element => {
         document.querySelector('.galery-content').innerHTML +=
         ` <div class="g-imageholder"><img 
-            src="../img/tattoos/gallery/thumbnail/${element}" onclick="previewIMG(this.src); toggleOverlay()"></div>
+            src="https://github.com/DeusDivinus/HTML/blob/main/Web%20Development/Bompton%20Studio/img/tattoos/gallery/thumbnail/${element}?raw=true" onclick="previewIMG(this.src); toggleOverlay()"></div>
         `
     });
 }
