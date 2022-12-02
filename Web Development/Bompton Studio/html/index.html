@@ -9,13 +9,18 @@
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
-<body class="flex-column">
+<body class="flex-column" onload="addImages()">
     <!-- Header  -->
-    <div class="overlay flex-row">
+    <div class="overlay flex-row flex-jcenter">
         <div class="overlay-content">
-
+            <img src="../img/x_logo.png" class="overlay-image">
         </div>
-        <div class="overlay-settings flex-column flex-acenter">
+        <div class="overlay-settings flex-column flex-acenter flex-acenter">
+            <button class="overlay-close"><img src="../img/x_logo.png" class="oc-icon"></button>
+            <button class="overlay-close"><img src="../img/dl_logo.png" class="oc-icon"></button>
+        </div>
+        <div class="overlay-settings-bottom flex-row flex-acenter flex-acenter flex-jcenter">
+            <button class="overlay-close"><img src="../img/dl_logo.png" class="oc-icon"></button>
             <button class="overlay-close"><img src="../img/x_logo.png" class="oc-icon"></button>
         </div>
     </div>
@@ -35,7 +40,7 @@
 
         <div class="flex-row end flex-row flex-acenter flex-jend">
             <span class="text-header">Instagram</span>
-            <a href="https://instagram.com/estebanvm_18?igshid=YmMyMTA2M2Y="><img src="../img/ig_logo.png" class="header-icons shiny-hover"></a>
+            <a href="https://instagram.com/estebanvm_18?igshid=YmMyMTA2M2Y="><img src="../img/ig_logo.png" class="header-icons shiny-hover ig-logo"></a>
         </div>
 
     </header>
@@ -72,15 +77,7 @@
         <div class="galery-holder flex-column flex-acenter flex-jcenter" id="gallery">
             <span class="titleI galery-title">Galería</span>
             <div class="galery-content flex-row flex-jcenter">
-                <div class="g-imageholder"><img src="../img/tattoos/gallery/small1.jpg"></div>
-                <div class="g-imageholder"><img src="../img/tattoos/gallery/small2.jpg"></div>
-                <div class="g-imageholder"><img src="../img/tattoos/gallery/small3.jpg"></div>
-                <div class="g-imageholder"><img src="../img/tattoos/gallery/small4.jpg"></div>
-                <div class="g-imageholder"><img src="../img/tattoos/gallery/small5.jpg"></div>
-                <div class="g-imageholder"><img src="../img/tattoos/gallery/small6.jpg"></div>
-                <div class="g-imageholder"><img src="../img/tattoos/gallery/small7.jpg"></div>
-                <div class="g-imageholder"><img src="../img/tattoos/gallery/small8.jpg"></div>
-            </div>
+         </div>
         </div>
     </div>
     <script src="../js/homepage.js"></script>

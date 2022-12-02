@@ -124,26 +124,29 @@ body{
 /* Overlay */
 
 .overlay{
-    display: none;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: fixed;
     background: var(--overlay-bg);
     z-index: 10000;
+    padding-left: 40px;
+    display: none;
 }
 
 .overlay-content{
-    width: 90%;
-    height: 100%;
+    height: 100vh;
+    width: 50vw;
+    width: fit-content;
 }
 
-.overlay-settings{
-
-    width: 10%;
+.overlay-image{
+    height: inherit;
+    width: inherit;
+    object-fit: contain;
 }
 
 .overlay-close{
-    width: 50px;
+    width: 40px;
     padding: 0px;
     margin: 10px;
     background: none;
@@ -155,6 +158,10 @@ body{
     height: 100%;
     object-fit: contain;
     mix-blend-mode: color-dodge;
+}
+
+.overlay-settings-bottom{
+    display: none;
 }
 
 /* Header */
@@ -185,6 +192,9 @@ header{
     filter: invert();
     width: var(--header-icon-w);
     height: var(--header-icon-h);
+}
+
+.ig-logo{
     margin-right: 20px;
 }
 
@@ -278,7 +288,7 @@ html {
 /* Carousel Holder */
 .galery-holder{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     color: white;
     background-image: url("../img/gallery-holderbg.jpg");
     background-size: contain;
@@ -303,7 +313,7 @@ html {
 .g-imageholder{
     transition: 300ms;
     background: black;
-    width: 20%;
+    width: 25%;
     opacity: 1;
 }
 
@@ -358,7 +368,27 @@ html {
     }
 
     /* Overlay */
+    .overlay{
+        padding: 0%;
+    }
+    .overlay-content{
+        height: 100%;
+        width: inherit;
+    }
+    
+    .overlay-settings{
+        display: none;
+    }
 
+    .overlay-settings-bottom{
+        display: flex;
+        height: 10%;
+        position: fixed;
+        width: 100%;
+        bottom: 0%;
+    }
+
+    
     /* Header */
 
     header{
@@ -374,6 +404,10 @@ html {
     .header-icons{
         width: var(--header-icon-w);
         height: var(--header-icon-h);
+    }
+
+    .ig-logo{
+        margin-right: 0px;
     }
 
     .start, .end{
@@ -423,7 +457,7 @@ html {
     }
 
     .g-imageholder{
-        width: 25%;
+        max-width: 33%;
     }
 
     .fi-footer-ch{
