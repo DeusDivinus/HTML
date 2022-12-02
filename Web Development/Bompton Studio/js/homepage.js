@@ -17,18 +17,32 @@ window.onscroll = function() {
 
 // Overlay
 
+document.querySelectorAll(".overlay-close").forEach(element => {
+    element.addEventListener("click", function()
+    {
+        toggleOverlay()
+    })
+});
+
+
 function toggleOverlay()
 {
-    styleManipulator(document.querySelector(".overlay"), "display", "flex")
+    document.querySelector(".overlay").classList.toggle("overlay-show")
+    document.querySelector(".overlay").classList.toggle("overlay-hide")
+    document.querySelector("body").classList.toggle("nonScroll")
 }
 
 function previewIMG(img)
 {
     pattern = /\d.jpg/g;
-    toggleOverlay()
+    img = pattern.exec(img)[0]
     try { 
-    console.log(pattern.exec(img)[0])
+        document.querySelector('.overlay-image').src =  `../img/tattoos/gallery/${img}`;
+        document.querySelector('.overlay-download').setAttribute("href", `../img/tattoos/gallery/${img}`)
+        document.querySelector('.overlay-download').setAttribute("download", true); 
+
     } catch (error) {
+        console.log(error)
     }
 }
 
@@ -38,7 +52,7 @@ function addImages()
     galleryIMG.forEach(element => {
         document.querySelector('.galery-content').innerHTML +=
         ` <div class="g-imageholder"><img 
-            src="../img/tattoos/gallery/thumbnail/${element}" onclick="previewIMG(this.src)"></div>
+            src="../img/tattoos/gallery/thumbnail/${element}" onclick="previewIMG(this.src); toggleOverlay()"></div>
         `
     });
 }
