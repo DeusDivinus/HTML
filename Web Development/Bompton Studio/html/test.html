@@ -5,11 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    <div class="carousel-holder">
-        
-    </div>
+    <a href="/Users/CTPH/Documents/Daniel/Bompton Studio/img/dl_logo.png" download="proposed_file_name">Download</a>
+    <button onclick="download('../img/fk_logo.png')">Download!</button>
+    <button onclick="downloady('')">Download!</button>
+
+    <iframe id="invisible"></iframe>
+    <script>
+        function download(url) {
+  const a = document.createElement('a')
+  a.href = url
+  a.download = url.split('/').pop()
+  document.body.appendChild(a)
+  a.click()
+  document.body.removeChild(a)
+}
+function downloady() {
+    var frametoo = document.getElementById('invisible');
+    frametoo.src = "../img/fk_logo.png";
+}
+
+function onStartedDownload(id) {
+  console.log(`Started downloading: ${id}`);
+}
+
+function onFailed(error) {
+  console.log(`Download failed: ${error}`);
+}
+
+    </script>
 </body>
 </html>

@@ -391,6 +391,10 @@ html {
     padding-inline: 10px;
 }
 
+.slogan{
+    color: #ebd5ad;
+}
+
 @media screen and (max-width:800px){
     :root{
         /* Header */
