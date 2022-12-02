@@ -38,7 +38,8 @@ function previewIMG(img)
     img = pattern.exec(img)[0]
     try { 
         document.querySelector('.overlay-image').src =  `../img/tattoos/gallery/${img}`;
-        document.querySelector('.overlay-download').setAttribute("href", `../img/tattoos/gallery/${img}`)
+        document.querySelector('.overlay-download').setAttribute("href", `/Web Development/Bompton Studio/img/tattoos/gallery/${img}`)
+        
         document.querySelector('.overlay-download').setAttribute("download", true); 
 
     } catch (error) {
